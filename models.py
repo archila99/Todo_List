@@ -1,11 +1,9 @@
-from fastapi import FastAPI
-from pydantic import BaseModel
+from sqlalchemy import Column, Integer, String
+from database import Base
 
-class Todo(BaseModel):
-    id: int 
-    item: str
+class Todo(Base):
+    __tablename__ = "todos"
 
-todo = Todo(id="123", item="ali")
-print(todo)
-print(todo.id, type(todo.id))
-print(todo.item, type(todo.item))
+    id =  Column(Integer, primary_key=True, index=True)
+    item = Column(String(255), nullable=False)
+
