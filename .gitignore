@@ -1,4 +1,8 @@
-# Ignore Python virtual environment
+# ========================
+# Python / Backend
+# ========================
+
+# Virtual environment
 venv/
 
 # Python cache files
@@ -12,14 +16,41 @@ build/
 dist/
 *.egg-info/
 
-# VS Code settings
-.vscode/
-
-# macOS system files
-.DS_Store
+# Database files (optional)
+*.sqlite3
 
 # Logs
 *.log
 
-# Optional: local environment variables
+# Environment variables
 .env
+
+# ========================
+# Node / Frontend
+# ========================
+
+# Node modules
+frontend/node_modules/
+
+# Build output
+frontend/dist/
+
+# Local env files
+frontend/.env
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+
+# ========================
+# IDEs / OS files
+# ========================
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
