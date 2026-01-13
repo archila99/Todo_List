@@ -7,31 +7,12 @@ Users can create, read, update, and delete todos with a responsive UI and persis
 
 ## 🏗️ Project Structure
 
-Todo-app/
-├── backend/ # FastAPI backend
-│ ├── app/
-│ │ ├── main.py # FastAPI application entry
-│ │ ├── core/ # Database and dependency files
-│ │ ├── models/ # SQLAlchemy models
-│ │ ├── schemas/ # Pydantic schemas
-│ │ └── routes/ # API routes
-│ ├── create_db.py # Script to initialize the database
-│ └── requirements.txt # Python dependencies
-│
-├── frontend/ # React + Vite frontend
-│ ├── public/ # Static files
-│ ├── src/
-│ │ ├── App.js # Main React component
-│ │ ├── api/ # API calls
-│ │ ├── components/ # React components
-│ │ └── styles/ # CSS files
-│ └── package.json # Node dependencies
-│
-├── venv/ # Python virtual environment (ignored in git)
-├── .gitignore
-└── README.md
+Todo-app
+    backend 
+        FastAPI
+    frontend
+        React 
 
----
 
 ## ⚡ Features
 
