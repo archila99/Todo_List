@@ -1,2 +1,2 @@
-from .todo import TodoCreate, TodoRead
+from .schemas import TodoCreate, TodoRead
 

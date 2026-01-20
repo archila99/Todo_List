@@ -4,12 +4,21 @@
 
 # Virtual environment
 venv/
+.venv/
+env/
 
 # Python cache files
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
+
+# Testing & Coverage
+.coverage
+htmlcov/
+coverage.xml
+.pytest_cache/
+.mypy_cache/
 
 # Distribution / packaging
 build/
@@ -18,9 +27,11 @@ dist/
 
 # Database files (optional)
 *.sqlite3
+*.db
 
 # Logs
 *.log
+logs/
 
 # Environment variables
 .env
@@ -30,10 +41,12 @@ dist/
 # ========================
 
 # Node modules
+node_modules/
 frontend/node_modules/
 
 # Build output
 frontend/dist/
+frontend/build/
 
 # Local env files
 frontend/.env
@@ -49,8 +62,14 @@ frontend/.env.production.local
 # VS Code
 .vscode/
 
+# JetBrains
+.idea/
+
 # macOS
 .DS_Store
 
 # Windows
 Thumbs.db
+ehthumbs.db
+Desktop.ini
+
